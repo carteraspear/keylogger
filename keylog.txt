@@ -47,3 +47,9 @@ Key.space
 'g'
 'e'
 'r'
+'g'
+'i'
+'t'
+'h'
+'u'
+Key.enter
